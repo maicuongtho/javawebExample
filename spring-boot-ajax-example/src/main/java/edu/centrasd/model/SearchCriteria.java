@@ -3,9 +3,9 @@ package edu.centrasd.model;
 import javax.validation.constraints.NotBlank;
 
 public class SearchCriteria {
-	@NotBlank(message = "username can't empty!")
+	
     String username;
-
+	private String email;
     public String getUsername() {
         return username;
     }
@@ -13,4 +13,12 @@ public class SearchCriteria {
     public void setUsername(String username) {
         this.username = username;
     }
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 }

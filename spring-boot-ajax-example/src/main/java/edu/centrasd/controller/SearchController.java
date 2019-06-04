@@ -43,7 +43,7 @@ public class SearchController {
 
         }
 
-        List<User> users = userService.findByUserNameOrEmail(search.getUsername());
+        List<User> users = userService.findByUserNameOrEmail(search.getUsername(),search.getEmail());
         if (users.isEmpty()) {
             result.setMsg("Không tìm thấy User!");
         } else {
